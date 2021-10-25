@@ -1,0 +1,49 @@
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 1% 10%;
+    background-color: #EAEAEA;
+}
+h1 {
+    font-family: "Birthstone Bounce", serif;
+    text-align: center;
+    font-size: 45px;
+    word-spacing: .28em;
+}
+table, th, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.row {
+    display: flex;
+}
+.column {
+    flex: 33.33%;
+}
+table {
+    width: 75%;
+}
+th {
+    height: 40px;
+    background-color: #608e6c;
+    color: white;
+}
+td {
+    vertical-align: center;
+    height: 15px;
+    padding: 0% .2% 0% .2%;
+
+}
+/*
+tr:hover {
+    background-color: #558060;
+}
+*/
+.code {
+    font-family: "Space Mono", monospace;
+    font-size: small;
+    border-spacing: 2px;
+}
+mark {
+    background-color: #608e6c;
+    color: white;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Dev Cheat Sheet</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Web Dev Fundamentals Cheat Sheet</h1>
+    <h2>Starting an HTML Document</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Requirement</th>
+                <th>Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Doc Type</td>
+                <td class="code"><mark>&lt;!DOCTYPE html&gt;</mark></td>
+            </tr>
+            <tr>
+                <td>CSS Link</td>
+                <td class="code"><mark>&lt;link href="<em>link to local css stylesheet</em>" type="text/css" rel="stylesheet" /&gt;</mark></td>
+            </tr>
+            <tr>
+                <td>Common Tags</td>
+                <td class="code"><mark>&lt;html&gt;, &lt;head&gt;, &lt;body&gt;, &lt;footer&gt;</mark></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>CSS Selectors</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Meaning</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Universal</td>
+                <td>Applies to all elements in the document</td>
+                <td class="code"><mark>* {}</mark></td>
+            </tr>
+            <tr>
+                <td>Type</td>
+                <td>Matches element names</td>
+                <td class="code"><mark>h1, h2, h3 {}</mark></td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td>Matches an element's class value</td>
+                <td class="code"><mark>.note {}, p.note {}</mark></td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Matches an element's ID value</td>
+                <td class="code"><mark>#introduction {}</mark></td>
+            </tr>
+            <tr>
+                <td>Child</td>
+                <td>Matches an element that is a direct child of another</td>
+                <td class="code"><mark>p>a {}</mark></td>
+            </tr>
+            <tr>
+                <td>Descendant</td>
+                <td>Matches an element that is a descendant of another element, not only a direct child</td>
+                <td class="code"><mark>p a {}</mark></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>CSS Declarations and Values</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Declaration</th>
+                <th>Meaning</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>opacity</td>
+                <td>Specify the opacity of an element with a value between 0 (0% opacity) and 1 (100% opacity)</td>
+                <td class="code"><mark>opacity: 0.5;</mark></td>
+            </tr>
+            <tr>
+                <td>hsla</td>
+                <td>Hue (an angle between 0 and 360 degrees), saturation (percentage), lightness (percentage, with 0% being white and 100% being black), and alpha (or opacity, between 0 and 1.0)</td>
+                <td class="code"><mark>background-color: { hsla(0, 100%, 100%, 0.5); }</mark></td>
+            </tr>
+            <tr>
+                <td>@font-face</td>
+                <td>Use a font, even if it isn't downloaded on the user's computer</td>
+                <td class="code"><mark>@font-face { font-family: '<em>Name of font</em>; src: url('<em>link to fonts by provider, and requires links for eot, woff, etc</em>'); }</mark></td>
+            </tr>
+            <tr>
+                <td>line-height</td>
+                <td>Increase or decrease the vertical space between lines of text using ems, which are relative to the text size (1.4 is standard)</td>
+                <td class="code"><mark>p { line-height: 1.4em;</mark></td>
+            </tr>
+            <tr>
+                <td>letter-spacing</td>
+                <td>Manage the space between letters</td>
+                <td class="code"><mark>p { letter-spacing: 02em; }</mark></td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>Add space between the text and the edges of the screen, first % is top and bottom, second is left and right</td>
+                <td class="code"><mark>body { padding: 5% 10%; }</mark></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table Tags</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="code"><mark>&lt;table&gt;</mark></td>
+                <td>Table</td>
+                <td>The wrapper element for all HTML tables.</td>
+            </tr>
+            <tr>
+                <td class="code"><mark>&lt;thead&gt;</mark></td>
+                <td>Table Head</td>
+                <td>The set of rows defining the column headers in a table.</td>
+            </tr>
+            <tr>
+                <td class="code"><mark>&lt;tbody&gt;</mark></td>
+                <td>Table Body</td>
+                <td>The set of rows containing actual table data.</td>
+            </tr>
+            <tr>
+                <td class="code"><mark>&lt;tr&gt;</mark></td>
+                <td>Table Row</td>
+                <td>The table row container.</td>
+            </tr>
+            <tr>
+                <td class="code"><mark>&lt;th&gt;</mark></td>
+                <td>Table Heading</td>
+                <td>The table row title.</td>
+            </tr>
+            <tr>
+                <td class="code"><mark>&lt;td&gt;</mark></td>
+                <td>Table Data</td>
+                <td>The table row container.</td>
+            </tr>
+            <tr>
+                <td class="code"><mark>&lt;tfoot&gt;</mark></td>
+                <td>Table Foot</td>
+                <td>The set of rows defining the footer in a table.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>HTML Table Examples</h3>
+    <div class="row">
+        <div class="column">
+        <h4>Row Headings</h4>
+        <p class="code"><mark>
+            &lt;table&gt;
+            <br>&emsp;&lt;thead&gt;
+            <br>&emsp;&emsp;&lt;tr&gt;
+            <br>&emsp;&emsp;&emsp;&lt;th&gt;
+            <br>&emsp;&emsp;&emsp;&emsp;Row name here
+            <br>&emsp;&emsp;&emsp;&lt;/th&gt;
+            <br>&emsp;&emsp;&lt;/tr&gt;
+            <br>&emsp;&lt;/thead&gt;
+            <br>&lt;/table&gt; </mark>
+        </p>
+        </div>
+        <div class="column">
+        <h4>Table Data</h4>
+        <p class="code"><mark>
+            &lt;tbody&gt;
+            <br>&emsp;&lt;tr&gt;
+            <br>&emsp;&emsp;&lt;td&gt;
+            <br>&emsp;&emsp;&emsp;Table data here
+            <br>&emsp;&emsp;&lt;/td&gt;
+            <br>&emsp;&lt;/tr&gt;
+            <br>&lt;/tbody&gt;</mark>
+        </p>
+        </div>
+        <div class="column">
+            <h4>Footer Data</h4>
+            <p class="code"><mark>
+                &lt;tfoot&gt;
+                <br>&emsp;&lt;tr&gt;
+                <br>&emsp;&emsp;&lt;td&gt;
+                <br>&emsp;&emsp;&emsp;Table data here
+                <br>&emsp;&emsp;&lt;/td&gt;
+                <br>&emsp;&lt;/tr&gt;
+                <br>&lt;/tfoot&gt;</mark>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
